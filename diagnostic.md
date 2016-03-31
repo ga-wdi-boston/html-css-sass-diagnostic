@@ -31,7 +31,7 @@ elements by 30%.
 ```
 
 Now, suppose you have a `$base-margin` defined as below. Write a style rule to
-halve the base margin, but only for list item elements.
+**halve** the base margin, but only for list item elements.
 
 ```scss
 $base-margin: 1.5em;
