@@ -28,7 +28,7 @@ elements by 30%.
 
 ```scss
 h1 {
-  font-size: $base-font-size * 30;
+  font-size: $base-font-size * 1.3;
 }
 ```
 
