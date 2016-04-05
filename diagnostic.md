@@ -56,7 +56,7 @@ with white. Write the code to tint `$cornflower` by 20%.
 ```scss
 @function tint($cornflower, 20%) {
   @return mix(white, $cornflower, 20%);
-}
+} 
 
 ```
 
