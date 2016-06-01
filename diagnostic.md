@@ -27,7 +27,7 @@ on the body element. Use that variable to increase font-size of `h1`
 elements by 30%.
 
 ```scss
-h1{
+h1 {
   font-size: $base-font-size * 1.3
 }
 ```
@@ -53,7 +53,7 @@ will take the base color and lighten it by the percentage indicated by mixing it
 with white. Write the code to tint `$cornflower` by 20%.
 
 ```scss
-// your response here
+tint($cornflower, 20%);
 ```
 
 ## Mixins
@@ -62,7 +62,7 @@ Suppose you want to define a mixin named `row` stored in `./row.scss`. Write the
 code to import the mixin definition in the current module.
 
 ```scss
-// your response here
+@import 'row';
 ```
 
 Now that the mixin is imported, let's use it. This mixin doesn't take any
@@ -70,5 +70,7 @@ arguments. Write the code to include the mixin inside all elements with a
 class of `content`.
 
 ```scss
-// your response here
+.content {
+  @extend row;
+}
 ```
