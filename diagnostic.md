@@ -9,14 +9,14 @@ We have a color literal, `#6495ed`, that we want to store in the variable named
 desired name.
 
 ```scss
-// your response here
+$cornflower: #6495ed;
 ```
 
 Write the Sass code to access the variable once it has been defined.
 
 ```scss
 a {
-  color: /* your response here*/;
+  color: $cornflower;
 }
 ```
 
@@ -27,7 +27,9 @@ on the body element. Use that variable to increase font-size of `h1`
 elements by 30%.
 
 ```scss
-// your response here
+h1{
+  font-size: $base-font-size * 1.3
+}
 ```
 
 Now, suppose you have a `$base-margin` defined as below. Write a style rule to
@@ -38,7 +40,9 @@ $base-margin: 1.5em;
 ```
 
 ```scss
-// your response here
+li {
+  margin: $base-margin * .5
+}
 ```
 
 ## Functions
