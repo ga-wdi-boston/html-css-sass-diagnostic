@@ -10,13 +10,14 @@ desired name.
 
 ```scss
 // your response here
+$cornflower: #6495ed;
 ```
 
 Write the Sass code to access the variable once it has been defined.
 
 ```scss
 a {
-  color: /* your response here*/;
+  color: $cornflower;
 }
 ```
 
@@ -28,6 +29,7 @@ elements by 30%.
 
 ```scss
 // your response here
+$big-font-size: $base-font-size * 1.3;
 ```
 
 Now, suppose you have a `$base-margin` defined as below. Write a style rule to
@@ -39,6 +41,10 @@ $base-margin: 1.5em;
 
 ```scss
 // your response here
+$halfBaseMargin: $base-margin * .5;
+li{
+  margin: halfBaseMargin;
+}
 ```
 
 ## Functions
@@ -50,6 +56,7 @@ with white. Write the code to tint `$cornflower` by 20%.
 
 ```scss
 // your response here
+$tintCornFlower: tint($cornflower, 20%);
 ```
 
 ## Mixins
@@ -59,6 +66,8 @@ code to import the mixin definition in the current module.
 
 ```scss
 // your response here
+@import './row.scss';
+
 ```
 
 Now that the mixin is imported, let's use it. This mixin doesn't take any
@@ -67,4 +76,10 @@ class of `content`.
 
 ```scss
 // your response here
+.content{
+  @include row() {
+    //stuff
+  }
+}
+
 ```
