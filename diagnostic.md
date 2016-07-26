@@ -74,3 +74,6 @@ class of `content`.
   @include row();
 }
 ```
+
+Comfort: 4
+Clarity: 4
