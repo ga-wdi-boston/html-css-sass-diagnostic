@@ -9,14 +9,16 @@ We have a color literal, `#6495ed`, that we want to store in the variable named
 desired name.
 
 ```scss
-// your response here
+$cornflower: #6495ed;
+
+
 ```
 
 Write the Sass code to access the variable once it has been defined.
 
 ```scss
 a {
-  color: /* your response here*/;
+  color: $cornflower;
 }
 ```
 
@@ -27,7 +29,8 @@ on the body element. Use that variable to increase font-size of `h1`
 elements by 30%.
 
 ```scss
-// your response here
+$base-font-size: 10px;
+$header-font-size: (.30 * $base-font-size)
 ```
 
 Now, suppose you have a `$base-margin` defined as below. Write a style rule to
@@ -38,7 +41,11 @@ $base-margin: 1.5em;
 ```
 
 ```scss
-// your response here
+$list-margin: ($base-margin / 2)
+
+li {
+  margin: $list-margin;
+}
 ```
 
 ## Functions
@@ -49,7 +56,10 @@ will take the base color and lighten it by the percentage indicated by mixing it
 with white. Write the code to tint `$cornflower` by 20%.
 
 ```scss
-// your response here
+
+@new-color: tint($cornflower, 20%) {
+  @return mix(white, $cornflower, 20%);
+};
 ```
 
 ## Mixins
@@ -58,7 +68,9 @@ Suppose you want to define a mixin named `row` stored in `./row.scss`. Write the
 code to import the mixin definition in the current module.
 
 ```scss
-// your response here
+@import './row.scss';
+
+
 ```
 
 Now that the mixin is imported, let's use it. This mixin doesn't take any
@@ -66,5 +78,7 @@ arguments. Write the code to include the mixin inside all elements with a
 class of `content`.
 
 ```scss
-// your response here
+.content {
+  @include row();
+}
 ```
