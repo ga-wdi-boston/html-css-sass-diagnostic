@@ -40,7 +40,9 @@ $base-margin: 1.5em;
 ```
 
 ```scss
-// your response here
+li {
+  $new-base-margin: ($base-margin * 0.5);
+}
 ```
 
 ## Functions
