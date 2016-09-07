@@ -62,7 +62,7 @@ Suppose you want to define a mixin named `row` stored in `./row.scss`. Write the
 code to import the mixin definition in the current module.
 
 ```scss
-// your response here
+@import 'row';
 ```
 
 Now that the mixin is imported, let's use it. This mixin doesn't take any
