@@ -70,5 +70,7 @@ arguments. Write the code to include the mixin inside all elements with a
 class of `content`.
 
 ```scss
-// your response here
+.content {
+  @include row;
+}
 ```
