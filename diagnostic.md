@@ -27,7 +27,9 @@ on the body element. Use that variable to increase font-size of `h1`
 elements by 30%.
 
 ```scss
-// your response here
+h1 {
+  font-size: ($base-font-size * 1.3);
+}
 ```
 
 Now, suppose you have a `$base-margin` defined as below. Write a style rule to
