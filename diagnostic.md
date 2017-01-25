@@ -71,6 +71,6 @@ class of `content`.
 
 ```scss
 .content {
-  @include row;
+  @include row();
 }
 ```
