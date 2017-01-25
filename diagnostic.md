@@ -4,7 +4,7 @@
 Place your responses inside the fenced code-blocks where indicated by comments.
 
 ## Sass Variables
-
+d
 We have a color literal, `#6495ed`, that we want to store in the variable named
 "cornflower". Write the Sass code necessary to assign the color literal to the
 desired name.
