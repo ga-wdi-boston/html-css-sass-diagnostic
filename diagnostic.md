@@ -53,7 +53,7 @@ will take the base color and lighten it by the percentage indicated by mixing it
 with white. Write the code to tint `$cornflower` by 20%.
 
 ```scss
-tint($cornflower, 20%);
+color: tint($cornflower, 20%);
 ```
 
 ## Mixins
