@@ -9,14 +9,20 @@ We have a color literal, `#6495ed`, that we want to store in the variable named
 desired name.
 
 ```scss
-// your response here
+$cornflower: #6495ed;
+
+___ {
+  color: $cornflower;
+}
 ```
 
 Write the Sass code to access the variable once it has been defined.
 
 ```scss
+$primary-color: #6495ed;
+
 a {
-  color: /* your response here*/;
+  color: $primary-color;
 }
 ```
 
@@ -27,7 +33,15 @@ on the body element. Use that variable to increase font-size of `h1`
 elements by 30%.
 
 ```scss
-// your response here
+$base-font-size: 30%;
+
+element {
+  font-size: $base-font-size
+}
+
+h1 {
+  font-size: $base-font-size
+}
 ```
 
 Now, suppose you have a `$base-margin` defined as below. Write a style rule to
@@ -38,7 +52,12 @@ $base-margin: 1.5em;
 ```
 
 ```scss
-// your response here
+$base-margin: 1.5em;
+$base-margin: 1.5em/2;
+
+.li {
+  margin: $base-margin;
+}
 ```
 
 ## Functions
@@ -49,7 +68,14 @@ will take the base color and lighten it by the percentage indicated by mixing it
 with white. Write the code to tint `$cornflower` by 20%.
 
 ```scss
-// your response here
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+.li {
+  color: tint($cornflower, 20%) {
+    return mix(white, $cornflower, 20%);
+  }
 ```
 
 ## Mixins
