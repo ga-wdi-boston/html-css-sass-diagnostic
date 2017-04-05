@@ -9,14 +9,14 @@ We have a color literal, `#6495ed`, that we want to store in the variable named
 desired name.
 
 ```scss
-// your response here
+$cornflower: #649ed;
 ```
 
 Write the Sass code to access the variable once it has been defined.
 
 ```scss
 a {
-  color: /* your response here*/;
+  color: $cornflower;
 }
 ```
 
@@ -27,7 +27,9 @@ on the body element. Use that variable to increase font-size of `h1`
 elements by 30%.
 
 ```scss
-// your response here
+$base-font-size {
+  @include size(30%, h1)
+}
 ```
 
 Now, suppose you have a `$base-margin` defined as below. Write a style rule to
@@ -38,7 +40,10 @@ $base-margin: 1.5em;
 ```
 
 ```scss
-// your response here
+$halve = {
+  $base-margin, -50%
+}
+
 ```
 
 ## Functions
@@ -58,7 +63,7 @@ Suppose you want to define a mixin named `row` stored in `./row.scss`. Write the
 code to import the mixin definition in the current module.
 
 ```scss
-// your response here
+@import 'row'
 ```
 
 Now that the mixin is imported, let's use it. This mixin doesn't take any
