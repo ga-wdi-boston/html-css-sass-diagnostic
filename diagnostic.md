@@ -41,7 +41,7 @@ $base-margin: 1.5em;
 
 ```scss
 li {
-  $base-margin: $base-margin / 2;
+  base-margin: $base-margin / 2;
 }
 ```
 
