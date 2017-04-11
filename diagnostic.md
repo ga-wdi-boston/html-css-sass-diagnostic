@@ -27,6 +27,10 @@ on the body element. Use that variable to increase font-size of `h1`
 elements by 30%.
 
 ```scss
+h1 {
+  base-font-size * 1.3;
+}
+// or?
 $base-font-size: increase( h1, 30%);
 ```
 
@@ -72,7 +76,7 @@ arguments. Write the code to include the mixin inside all elements with a
 class of `content`.
 
 ```scss
-@mixin row 
+@mixin row
 
 .content { @include row; }
 ```
