@@ -9,7 +9,7 @@ We have a color literal, `#6495ed`, that we want to store in the variable named
 desired name.
 
 ```scss
-$cornflower: #6495ed;
+$cornflower: #6495ed; 
 ```
 
 Write the Sass code to access the variable once it has been defined.
