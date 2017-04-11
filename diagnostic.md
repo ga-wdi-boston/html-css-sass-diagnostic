@@ -80,5 +80,7 @@ class of `content`.
 
 ```scss
 // your response here
-@mixin()
+// @mixin content{
+//
+// }
 ```
