@@ -57,7 +57,7 @@ with white. Write the code to tint `$cornflower` by 20%.
   @return mix($pure-white, $color, $percentage);
 }
 
-$cornflower-light: tint($cornflower,10%)
+$cornflower-light: tint($cornflower,20%)
 
 ```
 
