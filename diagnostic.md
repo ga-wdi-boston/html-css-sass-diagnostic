@@ -44,6 +44,12 @@ $base-margin: 1.5em;
 ```scss
 $halved-margin: decrease( $base-margin li, 50%);
 // i'm trying to look up function names and can't find them. I'm guessing about decrease
+@function $halved-margin ( font-size * 0.5)
+// something in this direction ^^
+li {
+  $halved-margin
+}
+
 ```
 
 ## Functions
